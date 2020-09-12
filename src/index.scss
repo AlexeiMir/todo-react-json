@@ -31,3 +31,37 @@
   }
 
 }
+.field{
+
+  background: #FFFFFF;
+  border: 1px solid #EFEFEF;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 10px 12px;
+  width: 100%;
+
+  &:focus{
+    border-color: #dbdbdb;
+  }
+
+}
+.button{
+
+  width: 200px;
+  height: 37px;
+  background: #4DD599;
+  border-radius: 4px;
+  border: 0;
+  color: #fff;
+  padding: 10px 12px;
+  cursor: pointer;
+
+  &:hover{
+    background-color: darken(#4DD599,6%);
+  }
+
+  &:active{
+    background-color: darken(#4DD599,10%);
+  }
+
+}

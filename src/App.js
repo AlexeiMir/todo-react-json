@@ -1,6 +1,8 @@
 import React from 'react';
 import './index.scss';
-import {List} from "./components/List";
+import List from "./components/List";
+import AddList from "./components/AddList";
+import DB from './assets/db'
 
 function App() {
   return (
@@ -30,6 +32,7 @@ function App() {
                   name: 'Сварить борщ'
               }
           ]}/>
+          <AddList colors={DB.colors}/>
         </div>
       </div>
   );
