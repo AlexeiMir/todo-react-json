@@ -7,11 +7,22 @@
       opacity: 1;
     }
   }
+
+
   li{
     display: flex;
     align-items: center;
     cursor: pointer;
     padding: 10px 12px;
+
+    span{
+      flex:1;
+      text-overflow: ellipsis;
+      width: 160px;
+      overflow: hidden;
+      white-space: nowrap;
+
+    }
 
     &:hover #{$self}__remove-icon{
       opacity: 0.2;
