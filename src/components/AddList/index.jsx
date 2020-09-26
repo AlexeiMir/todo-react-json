@@ -33,8 +33,8 @@ const AddList = ({colors,onAdd}) => {
         axios.post("http://localhost:3001/lists", {
             "name": inputValue,
             "colorId": selectedColor}).then(({data}) => {
-            const color = colors.find(color => color.id === selectedColor).name
-            const obj = {...data,color:{name:color}}
+            const color = colors.find(color => color.id === selectedColor)
+            const obj = {...data,color,tasks:[]}
             onAdd(obj)
             onClose()
         }).finally(() => {

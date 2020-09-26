@@ -56,12 +56,6 @@
       "text": "Еще одна задача",
       "completed": false,
       "id": 5
-    },
-    {
-      "listId": 2,
-      "text": "Еще одна задача 2",
-      "completed": false,
-      "id": 6
     }
   ],
   "colors": [
