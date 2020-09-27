@@ -118,7 +118,6 @@ function App() {
             const list = lists.find(list => list.id === Number(listId));
             setActiveItem(list);
         }
-        console.log("in useEffect",listId)
     }, [lists, listId]);
 
     return (
