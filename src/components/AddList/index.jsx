@@ -30,7 +30,7 @@ const AddList = ({colors,onAdd}) => {
             return
         }
         setLoading(true)
-        axios.post("http://localhost:3001/lists", {
+        axios.post("http://localhost:3002/lists", {
             "name": inputValue,
             "colorId": selectedColor}).then(({data}) => {
             const color = colors.find(color => color.id === selectedColor)

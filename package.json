@@ -71,12 +71,13 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "fake-server": "json-server public/db.json  --watch --port 3001"
+    "fake-server": "json-server public/db.json  --watch --port 3002",
+    "predeploy": "yarn run build"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "proxy": "http://localhost:3001",
+  "proxy": "http://localhost:3002",
   "browserslist": {
     "production": [
       ">0.2%",

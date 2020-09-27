@@ -13,7 +13,7 @@ const Tasks = ({list, onEditeTitle,onAddTask,onRemoveTask,onEditeTask,onComplete
         const newTitle = window.prompt("Введите новый заголовок", list.name)
         if (newTitle) {
             onEditeTitle(newTitle, list.id)
-            axios.patch('http://localhost:3001/lists' + list.id, {name: newTitle})
+            axios.patch('http://localhost:3002/lists' + list.id, {name: newTitle})
                 .catch(() => console.log("Не удалось обновить название списка"))
         }
     }
