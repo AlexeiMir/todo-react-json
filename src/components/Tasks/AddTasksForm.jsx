@@ -21,7 +21,7 @@ const AddTasksForm = ({list,onAddTask}) => {
             completed: false
         }
         setIsLoading(true)
-        axios.post("http://localhost:3002/tasks",obj).then(({data}) => {
+        axios.post("/tasks",obj).then(({data}) => {
             onAddTask(data,list.id)
             toggleFormVisible()
         }).catch(() => alert("Ошибка при добавлении задачи"))
